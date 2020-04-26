@@ -135,8 +135,11 @@ equals与==是相同的。
 >> HashMap整体上性能都非常不错，但是不稳定，为O(N/Buckets)，N就是以数组中没有发生碰撞的元素。
 
                	获取            		查找         	添加/删除     		空间
+
 ArrayList     	O(1)            	O(1)            O(N)        		O(N)
+
 LinkedList   	O(N)            	O(N)            O(1)        		O(N)
+
 HashMap   	O(N/Bucket_size)   	O(N/Bucket_size)   	O(N/Bucket_size) 	O(N)
 
 注：发生碰撞实际上是非常稀少的，所以N/Bucket_size约等于1
